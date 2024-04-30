@@ -17,42 +17,42 @@ Warning Messages: If no country is selected or if the input position are incompl
 To run the application locally, follow these steps:
 
 1. Prerequisites
-Python 3.x installed on your system.
-requests, flask and its dependencies installed. You can install them via pip:
+   - Python 3.x installed on your system.
+   - requests, flask and its dependencies installed. You can install them via pip:
 
-pip install requests
-pip install flask
+   - pip install requests
+   - pip install flask
 
 2. Installation
-Download these files to your local machine:
-DataStructure.py
-app.py
-template folder contains four html files
+   - Download these files to your local machine:
+     - DataStructure.py
+     - app.py
+     - template folder contains four html files
 
-Or clone the repository to your local machine using Git:
-git clone https://github.com/jtyang1987/soccer_player_info.git
+   - Or clone the repository to your local machine using Git:
+     - git clone https://github.com/jtyang1987/soccer_player_info.git
 
 3. Create an account at https://dashboard.api-football.com/soccer/ids
-Fill the x-rapidapi-key in the DataStructure.py with the access key in your account.
+   - Fill the x-rapidapi-key in the DataStructure.py with the access key in your account.
 
 4. Navigate to the project directory
-cd to the working directory
+   - cd to the working directory
 
 5. Running the Application
-Run the Flask application:
-python app.py
+   - Run the Flask application:
+     - python app.py
 
 6. Open your web browser and go to http://localhost:5000 to access the application.
 
 
 # File Structure
-app.py: The main Flask application file containing route definitions and logic.
-main.html: HTML template for the home page.
-players.html: HTML template for displaying player information.
-positions.html: HTML template for displaying top players in a specific position.
-warning.html: HTML template for displaying warning messages.
-DataStructure.py: Python file containing the Player and PlayerLibrary classes.
-country.json: JSON files containing player data for specific countries (generated after fetching data).
+* app.py: The main Flask application file containing route definitions and logic.
+* main.html: HTML template for the home page.
+* players.html: HTML template for displaying player information.
+* positions.html: HTML template for displaying top players in a specific position.
+* warning.html: HTML template for displaying warning messages.
+* DataStructure.py: Python file containing the Player and PlayerLibrary classes.
+* country.json: JSON files containing player data for specific countries (generated after fetching data).
 
 
 # Imrpovments:
@@ -61,6 +61,6 @@ country.json: JSON files containing player data for specific countries (generate
 3. Improve the algorithm to calculate the edge between each nodes in the playersGraph graph structure. The current algorithm is calculating the sum of the differece of each statistics between two players. The sum, which is the similarity score, increases as the similarity between two players decreases. 
 
 
-# Feel free to customize this README file further based on your project's specific requirements and additional functionalities!
+## Feel free to customize this README file further based on your project's specific requirements and additional functionalities!
 
 
