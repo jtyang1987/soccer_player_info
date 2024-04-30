@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8"/>
+    <title>Welcome to the Soccer Players System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the Soccer Players System</h1>
+        <form action="/players" method="POST">
+            <p>
+                Which country's soccer league are you interested in for the season 2023?<br>
+                <input type="radio" name="country" value="England">England Premier League<br>
+                <input type="radio" name="country" value="Spain">Spain La Liga<br>
+                <input type="radio" name="country" value="Italy">Italy Serie A<br>
+                <input type="radio" name="country" value="Germany">Germany Bundesliga<br>
+                <input type="radio" name="country" value="France">France Ligue 1<br>
+            </p>
+            <p>
+                Select the position of players you are interested in:<br>
+                <input type="radio" name="position" value="Attacker">Attacker<br>
+                <input type="radio" name="position" value="Midfielder">Midfielder<br>
+                <input type="radio" name="position" value="Defender">Defender<br>
+                <input type="radio" name="position" value="Goalkeeper">Goalkeeper<br>
+            </p>
+            <p>
+                Which soccer player are you interested in? Please specify the first name and last name:<br>
+                <input name="name" type="text"/>
+            </p>
+            <input type="submit" value="Submit Form"/>
+        </form>
+    </div>
+</body>
+</html>
