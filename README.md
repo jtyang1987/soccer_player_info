@@ -29,6 +29,9 @@ DataStructure.py
 app.py
 template folder contains four html files
 
+Or clone the repository to your local machine using Git:
+git clone https://github.com/jtyang1987/soccer_player_info.git
+
 3. Create an account at https://dashboard.api-football.com/soccer/ids
 Fill the x-rapidapi-key in the DataStructure.py with the access key in your account.
 
